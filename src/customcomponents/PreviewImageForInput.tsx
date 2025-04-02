@@ -9,26 +9,28 @@ import Image from "next/image";
 
 type PreviewImageForInputProps = {
     fileImg: Blob;
-    nameImg: string;
+   nameImg: string;
     sizeImg: number;
-    typeImg: string
+    typeImg: string; 
+    title?: string
 }
 
 const PreviewImageForInput: React.FC<PreviewImageForInputProps> = ({
-    nameImg,
+   nameImg,
     sizeImg,
-    typeImg,
-    fileImg
+    typeImg, 
+    fileImg,
+    title
 }) => {
 
     return (
         <Card className="w-full mt-4">
             <CardHeader>
-                <CardTitle>Аватар</CardTitle>
+                <CardTitle>{title ? title : "Новый аватар"}</CardTitle>
             </CardHeader>
             <CardContent>
                 <div className="grid w-full items-center gap-4">
-                    <div className="flex flex-col space-y-1.5">
+                    <div className="flex flex-col space-y-1.5 truncate">
                         <ul className="flex flex-col space-y-1.5">
                            <li> <Image
                                 src={URL.createObjectURL(fileImg)}

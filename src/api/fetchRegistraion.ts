@@ -1,24 +1,26 @@
 import { BASE_URL } from "../../base";
+import { RegistartionType } from "@/types";
 
-
-type RegistartionType = {
-    username: string,
-    email: string,
-    password: string,
-    awatar: string,
-}
 
 export const fetchRegistration = async (dataRegistration: RegistartionType) => {
 const formData = new FormData();
 formData.append('username', dataRegistration.username);
 formData.append('email', dataRegistration.email);
 formData.append('password', dataRegistration.password);
-formData.append('awatar', dataRegistration.awatar);
+if(dataRegistration?.awatar)  {
+    formData.append('awatar', dataRegistration?.awatar);
+} 
+
 
 try {
-    const response = await fetch(`${BASE_URL}/`);
+    const response = await fetch(`${BASE_URL}/Registration.php`, {
+        method: 'POST',
+        body: formData,
+    });
+    const data  = await response.text();
+    return data;
 } catch (error) {
-    
+    return {message: false}
 }
 
 }

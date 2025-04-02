@@ -1,0 +1,33 @@
+.searchHidden {
+    display: none;
+    opacity: 0;
+}
+
+.searchVisible {
+    display: flex;
+    opacity: 1;
+    animation-name: searchOpasity;
+    animation-duration: 2s;
+}
+
+.searchBlock {
+    position: fixed;
+    width: 98%;
+    align-items: center;
+    margin: 1%;
+}
+.searchMobile {
+margin-top: 100px;
+}
+
+@keyframes searchOpasity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+ 

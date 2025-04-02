@@ -1,7 +1,7 @@
-import Registrationcomponent from "@/customcomponents/Registrationcomponent";
+import RegistrationComponent from "@/customcomponents/RegistrationComponent";
 
 const Registration = () => {
-    return (<><Registrationcomponent /></>);
+    return (<RegistrationComponent />);
 }
 
 export default Registration;
