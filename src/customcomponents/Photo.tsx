@@ -14,7 +14,7 @@ const Photo: FC<PhotoType> = ({ photoname, user_id, id }) => {
     <Link href={`/photo/${id}`}>
       <div className="p-2">
         <Image
-          src={`https://ruslansharipov.site/lv${photoname}`}
+          src={`https://tehnogaz63.ru/lv${photoname}`}
           alt="photo"
           className="rounded-md"
           width={300}

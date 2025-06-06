@@ -5,7 +5,7 @@ const nextConfig = {
           remotePatterns: [
             {
               protocol: 'https',
-              hostname: 'ruslansharipov.site',
+              hostname: 'tehnogaz63.ru',
               port: '',
               search: '',
             },

@@ -236,7 +236,7 @@ const UpdateUserComponent: FC<RegisterUpdateUserType> = ({
             <p className="mb-2">текущий аватар</p>
             <Image
               className="w-[100px] h-[100px]"
-              src={`https://ruslansharipov.site/lv/awatars/${id}/${awatar}`}
+              src={`https://tehnogaz63.ru/lv/awatars/${id}/${awatar}`}
               alt="фото пользователя"
               width="100"
               height="100"

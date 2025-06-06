@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://www.ruslansharipov.site/lv';
+export const BASE_URL = 'https://tehnogaz63.ru/lv';

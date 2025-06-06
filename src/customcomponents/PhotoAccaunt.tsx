@@ -94,7 +94,7 @@ const PhotoAccaunt = () => {
                 }}
               >
                 <Image
-                  src={`https://ruslansharipov.site/lv${onePhoto[0].photoname}`}
+                  src={`https://tehnogaz63.ru/lv${onePhoto[0].photoname}`}
                   alt="photo"
                   fill
                   style={{ objectFit: "contain" }}

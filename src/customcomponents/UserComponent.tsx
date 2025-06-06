@@ -62,7 +62,7 @@ const UserComponent = () => {
             {/*  <CardTitle>профиль</CardTitle> */}
             <Avatar className="w-[100px] h-[100px]">
               <AvatarImage
-                src={`https://ruslansharipov.site/lv/awatars/${userData.id}/${userData.awatar}`}
+                src={`https://tehnogaz63.ru/lv/awatars/${userData.id}/${userData.awatar}`}
                 alt="фото пользователя"
                 className="object-cover"
               />
